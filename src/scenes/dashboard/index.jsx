@@ -40,7 +40,7 @@ const Dashboard = () => {
             }}
           >
             <CurrencyExchangeIcon  sx={{ mr: "10px" }} />
-            Deposit/Withdraw Cash
+            Deposit/Withdraw Funds
           </Button>
         </Box>
       </Box>
