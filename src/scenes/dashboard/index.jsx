@@ -18,6 +18,10 @@ import { useState } from "react";
 import Sidebar from "../global/Sidebar";
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 
+function handleWallet() {
+  window.open("https://plott-wallet-prototype.netlify.app/","_blank")
+}
+
 const Dashboard = () => {
   const [isSidebar, setIsSidebar] = useState(true);
   const theme = useTheme();
@@ -38,6 +42,7 @@ const Dashboard = () => {
               fontWeight: "bold",
               padding: "10px 20px",
             }}
+            onClick={handleWallet}
           >
             <CurrencyExchangeIcon  sx={{ mr: "10px" }} />
             Deposit/Withdraw Funds
